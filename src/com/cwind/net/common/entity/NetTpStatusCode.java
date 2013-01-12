@@ -10,6 +10,10 @@ package com.cwind.net.common.entity;
  * @Date 2013 2013-1-12
  */
 public class NetTpStatusCode {
+
 	public short SendSuccess = 1001;
-	public short RecSuccess = 1002;
+	public short SendFail = 1002;
+
+	public short RecSuccess = 2002;
+	public short RecFail = 2003;
 }
