@@ -1,6 +1,6 @@
 package com.cwind.net.message.handle;
 
-import com.cwind.net.common.entity.CWindTpBasicMessage;
+import com.cwind.net.common.entity.CWTpBasicMessage;
 
 /**
  * 抽象类 ，作为基础handle，进行处理
@@ -36,12 +36,12 @@ public abstract class CWindMsBasicHandle implements CWindIMsHandler {
 	}
 
 	@Override
-	public void dealRecMs(CWindTpBasicMessage obj) {
+	public void dealRecMs(CWTpBasicMessage obj) {
 		this.dealRecMs(obj, null);
 	}
 
 	@Override
-	public void dealRecMs(CWindTpBasicMessage obj,
+	public void dealRecMs(CWTpBasicMessage obj,
 			CWindIMsHandlerNotify callback) {
 		// TODO Auto-generated method stub
 

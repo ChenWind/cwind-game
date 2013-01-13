@@ -6,9 +6,9 @@ package com.cwind.net.common.entity;
  * @author chenzf
  * @Date 2013 2013-1-12
  */
-public class CWindTpBasicMessage {
+public class CWTpBasicMessage {
 	/**
-	 * 消息命令：{@link CWindTpCommand}
+	 * 消息命令：{@link CWTpCommand}
 	 */
 
 	private byte msCmd;

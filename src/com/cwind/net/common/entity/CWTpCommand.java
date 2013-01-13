@@ -12,7 +12,7 @@ package com.cwind.net.common.entity;
  * @author chenzf
  * @Date 2013 2013-1-11
  */
-public class CWindTpCommand {
+public class CWTpCommand {
 	/***
 	 * ÍøÂçÁ¬½Ó
 	 */
