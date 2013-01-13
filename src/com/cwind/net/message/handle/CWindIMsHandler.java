@@ -14,6 +14,15 @@ public interface CWindIMsHandler {
 
 	public CWindHandleStatus getStatus();
 
+	/**
+	 * 
+	 * @return
+	 * @description 返回当前的code，有则返回，否则为空
+	 * @Date 2013 2013-1-13
+	 * @author chenzf
+	 */
+	public short getResultCode();
+
 	public void dealRecMs(CWindTpBasicMessage obj);
 
 	public void dealRecMs(CWindTpBasicMessage obj,

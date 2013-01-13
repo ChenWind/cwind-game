@@ -12,9 +12,27 @@ import com.cwind.net.common.entity.CWindTpBasicMessage;
 public abstract class CWindMsBasicHandle implements CWindIMsHandler {
 
 	protected int handleid;
+	protected short resultCode;
+	protected CWindHandleStatus status;
 
 	public CWindMsBasicHandle(int handleID) {
 		this.handleid = handleID;
+		this.status = CWindHandleStatus.HandleInvaild;
+	}
+
+	@Override
+	public int getHandlerID() {
+		return this.handleid;
+	}
+
+	@Override
+	public CWindHandleStatus getStatus() {
+		return this.status;
+	}
+
+	@Override
+	public short getResultCode() {
+		return this.resultCode;
 	}
 
 	@Override
