@@ -10,6 +10,7 @@ public class NetTpMessage {
 	/**
 	 * 消息命令：{@link NetTpCommand}
 	 */
+	
 	private byte msCmd;
 	/**
 	 * 消息编辑格式，默认0
