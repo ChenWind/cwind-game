@@ -15,4 +15,7 @@ public interface CWindIMsHandler {
 	public CWindHandleStatus getStatus();
 
 	public void dealRecMs(CWindTpBasicMessage obj);
+
+	public void dealRecMs(CWindTpBasicMessage obj,
+			CWindIMsHandlerNotify callback);
 }
