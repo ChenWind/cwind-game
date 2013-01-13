@@ -7,17 +7,8 @@ package com.cwind.net.common.entity;
  * @Date 2013 2013-1-13
  */
 public class CWindTpPack {
-	private CWindTpPackObj pack;
 	private CWindTpPackObj cmdpack;
 	private CWindTpPackObj datapack;
-
-	public CWindTpPackObj getAllPack() {
-		return pack;
-	}
-
-	public void setAllPack(CWindTpPackObj pack) {
-		this.pack = pack;
-	}
 
 	public CWindTpPackObj getCmdpack() {
 		return cmdpack;
@@ -33,5 +24,9 @@ public class CWindTpPack {
 
 	public void setDatapack(CWindTpPackObj datapack) {
 		this.datapack = datapack;
+	}
+
+	public short getPackLen() {
+		return 0;
 	}
 }
