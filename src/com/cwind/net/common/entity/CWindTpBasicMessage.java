@@ -6,9 +6,9 @@ package com.cwind.net.common.entity;
  * @author chenzf
  * @Date 2013 2013-1-12
  */
-public class NetTpBasicMessage {
+public class CWindTpBasicMessage {
 	/**
-	 * 消息命令：{@link NetTpCommand}
+	 * 消息命令：{@link CWindTpCommand}
 	 */
 
 	private byte msCmd;
@@ -25,7 +25,7 @@ public class NetTpBasicMessage {
 	/**
 	 * 一般为空，但部分cmd当前可能需要有同的
 	 */
-	private NetTpPack msContent;
+	private CWindTpPackObj msContent;
 
 	public int getMsID() {
 		return msID;
@@ -35,11 +35,11 @@ public class NetTpBasicMessage {
 		this.msID = msID;
 	}
 
-	public NetTpPack getMsContent() {
+	public CWindTpPackObj getMsContent() {
 		return msContent;
 	}
 
-	public void setMsContent(NetTpPack msContent) {
+	public void setMsContent(CWindTpPackObj msContent) {
 		this.msContent = msContent;
 	}
 
