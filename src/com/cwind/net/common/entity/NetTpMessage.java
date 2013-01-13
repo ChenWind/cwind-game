@@ -10,7 +10,7 @@ public class NetTpMessage {
 	/**
 	 * 消息命令：{@link NetTpCommand}
 	 */
-	
+
 	private byte msCmd;
 	/**
 	 * 消息编辑格式，默认0
@@ -22,15 +22,7 @@ public class NetTpMessage {
 	 */
 	private int msID;
 
-	/**
-	 * 本身消息携带的数据 ，可以为空，本身消息可以不携带任何数据
-	 */
 	private NetTpPack msContent;
-
-	/**
-	 * 本次请求携带的数据
-	 */
-	private NetTpPack data;
 
 	public int getMsID() {
 		return msID;
@@ -46,14 +38,6 @@ public class NetTpMessage {
 
 	public void setMsContent(NetTpPack msContent) {
 		this.msContent = msContent;
-	}
-
-	public NetTpPack getData() {
-		return data;
-	}
-
-	public void setData(NetTpPack data) {
-		this.data = data;
 	}
 
 	/**
