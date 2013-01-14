@@ -6,23 +6,23 @@ package com.cwind.net.common.entity;
  * @author chenzf
  * @Date 2013 2013-1-13
  */
-public class CWindTpPack {
-	private CWindTpPackObj cmdpack;
-	private CWindTpPackObj datapack;
+public class CWTPack {
+	private CWTPackObj cmdpack;
+	private CWTPackObj datapack;
 
-	public CWindTpPackObj getCmdpack() {
+	public CWTPackObj getCmdpack() {
 		return cmdpack;
 	}
 
-	public void setCmdpack(CWindTpPackObj cmdpack) {
+	public void setCmdpack(CWTPackObj cmdpack) {
 		this.cmdpack = cmdpack;
 	}
 
-	public CWindTpPackObj getDatapack() {
+	public CWTPackObj getDatapack() {
 		return datapack;
 	}
 
-	public void setDatapack(CWindTpPackObj datapack) {
+	public void setDatapack(CWTPackObj datapack) {
 		this.datapack = datapack;
 	}
 

@@ -1,6 +1,6 @@
 package com.cwind.net.message.handle;
 
-import com.cwind.net.common.entity.CWTpBasicMessage;
+import com.cwind.net.common.entity.CWTBasicMessage;
 
 /**
  * 
@@ -8,11 +8,11 @@ import com.cwind.net.common.entity.CWTpBasicMessage;
  * @author chenzf
  * @Date 2013 2013-1-13
  */
-public interface CWindIMsHandler {
+public interface CWTIMsHandler {
 
 	public int getHandlerID();
 
-	public CWindHandleStatus getStatus();
+	public CWTHandleStatus getStatus();
 
 	/**
 	 * 
@@ -23,8 +23,8 @@ public interface CWindIMsHandler {
 	 */
 	public short getResultCode();
 
-	public void dealRecMs(CWTpBasicMessage obj);
+	public void dealRecMs(CWTBasicMessage obj);
 
-	public void dealRecMs(CWTpBasicMessage obj,
-			CWindIMsHandlerNotify callback);
+	public void dealRecMs(CWTBasicMessage obj,
+			CWTIMsHandlerNotify callback);
 }

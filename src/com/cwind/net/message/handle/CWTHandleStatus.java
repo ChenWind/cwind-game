@@ -6,6 +6,6 @@ package com.cwind.net.message.handle;
  * @author chenzf
  * @Date 2013 2013-1-13
  */
-public enum CWindHandleStatus {
+public enum CWTHandleStatus {
 	HandleInvaild, InDoing, Finished
 }

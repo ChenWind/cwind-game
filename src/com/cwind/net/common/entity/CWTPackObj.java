@@ -6,7 +6,7 @@ package com.cwind.net.common.entity;
  * @author chenzf
  * @Date 2013 2013-1-13
  */
-public class CWindTpPackObj {
+public class CWTPackObj {
 
 	/**
 	 * °ü³¤¶È

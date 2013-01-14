@@ -6,9 +6,9 @@ package com.cwind.net.message.handle;
  * @author chenzf
  * @Date 2013 2013-1-13
  */
-public class ConnectHandle extends CWindMsBasicHandle {
+public class CWTConnectHandle extends CWTMsBasicHandle {
 
-	public ConnectHandle(int handleID) {
+	public CWTConnectHandle(int handleID) {
 		super(handleID);
 	}
 }

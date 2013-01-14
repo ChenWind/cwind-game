@@ -1,6 +1,6 @@
 package com.cwind.net.message.handle;
 
-import com.cwind.net.common.entity.CWTpBasicMessage;
+import com.cwind.net.common.entity.CWTBasicMessage;
 
 /**
  * 抽象类 ，作为基础handle，进行处理
@@ -9,15 +9,15 @@ import com.cwind.net.common.entity.CWTpBasicMessage;
  * @author chenzf
  * @Date 2013 2013-1-13
  */
-public abstract class CWindMsBasicHandle implements CWindIMsHandler {
+public abstract class CWTMsBasicHandle implements CWTIMsHandler {
 
 	protected int handleid;
 	protected short resultCode;
-	protected CWindHandleStatus status;
+	protected CWTHandleStatus status;
 
-	public CWindMsBasicHandle(int handleID) {
+	public CWTMsBasicHandle(int handleID) {
 		this.handleid = handleID;
-		this.status = CWindHandleStatus.HandleInvaild;
+		this.status = CWTHandleStatus.HandleInvaild;
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public abstract class CWindMsBasicHandle implements CWindIMsHandler {
 	}
 
 	@Override
-	public CWindHandleStatus getStatus() {
+	public CWTHandleStatus getStatus() {
 		return this.status;
 	}
 
@@ -36,13 +36,13 @@ public abstract class CWindMsBasicHandle implements CWindIMsHandler {
 	}
 
 	@Override
-	public void dealRecMs(CWTpBasicMessage obj) {
+	public void dealRecMs(CWTBasicMessage obj) {
 		this.dealRecMs(obj, null);
 	}
 
 	@Override
-	public void dealRecMs(CWTpBasicMessage obj,
-			CWindIMsHandlerNotify callback) {
+	public void dealRecMs(CWTBasicMessage obj,
+			CWTIMsHandlerNotify callback) {
 		// TODO Auto-generated method stub
 
 	}

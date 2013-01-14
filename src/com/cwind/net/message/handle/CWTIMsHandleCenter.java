@@ -1,6 +1,6 @@
 package com.cwind.net.message.handle;
 
-import com.cwind.net.common.entity.CWindTpPackObj;
+import com.cwind.net.common.entity.CWTPackObj;
 
 /**
  * 
@@ -8,7 +8,7 @@ import com.cwind.net.common.entity.CWindTpPackObj;
  * @author chenzf
  * @Date 2013 2013-1-13
  */
-public interface CWindIMsHandleCenter extends CWindIMsHandler {
+public interface CWTIMsHandleCenter extends CWTIMsHandler {
 
 	/**
 	 * 
@@ -26,5 +26,5 @@ public interface CWindIMsHandleCenter extends CWindIMsHandler {
 	 * @Date 2013 2013-1-13
 	 * @author chenzf
 	 */
-	public void sendNotifyMs(CWindTpPackObj obj);
+	public void sendNotifyMs(CWTPackObj obj);
 }
