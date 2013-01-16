@@ -12,13 +12,19 @@ import com.cwind.net.common.entity.CWTPackObj;
  */
 public abstract class CWTMsBasicHandle implements CWTIMsHandler {
 	/**
-     * 
-     */
+	 * «Î«ÛID
+	 */
 	protected int handleid;
 	protected short resultCode;
 	protected CWTHandleStatus status;
 	protected volatile boolean sendNext;
 
+	/**
+	 * 
+	 * Constructor Method
+	 * 
+	 * @param handleID
+	 */
 	public CWTMsBasicHandle(int handleID) {
 		this.handleid = handleID;
 		this.status = CWTHandleStatus.HandleInvaild;
